@@ -1,3 +1,16 @@
+-- Create the database
+CREATE DATABASE IF NOT EXISTS restaurant;
+
+-- Use the new database
+USE restaurant;
+
+-- Drop tables if they already exist (to reset the environment)
+DROP TABLE IF EXISTS Booking;
+DROP TABLE IF EXISTS RestaurantTable;
+DROP TABLE IF EXISTS Customer;
+DROP TABLE IF EXISTS Restaurant;
+
+
 -- Create Restaurant table
 CREATE TABLE Restaurant (
     restaurant_id INT AUTO_INCREMENT PRIMARY KEY,
